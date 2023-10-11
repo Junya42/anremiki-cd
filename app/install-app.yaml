@@ -13,7 +13,6 @@ spec:
       labels:
         app: wil42-playground
     spec:
-      hostNetwork: true
       containers:
       - name: wil42-playground
         image: wil42/playground:v1

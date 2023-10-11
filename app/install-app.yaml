@@ -31,21 +31,3 @@ spec:
   ports:
     - port: 8888
       targetPort: 8888
-
----
-
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: ingress-app
-spec:
-  rules:
-  - http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: wil42-playground-service
-            port:
-              number: 8888
